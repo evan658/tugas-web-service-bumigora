@@ -1,0 +1,49 @@
+/* style.css */
+
+/* --- Navbar (Flexbox) --- */
+.main-nav {
+    display: flex; /* Komentar: Menggunakan Flexbox untuk tata letak navbar */
+    justify-content: space-between;
+    align-items: center;
+    background-color: #2c3e50;
+    color: white;
+    padding: 10px 20px;
+}
+.main-nav a {
+    color: white;
+    text-decoration: none;
+    padding: 0 10px;
+}
+.main-nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex; /* Komentar: Menggunakan Flexbox untuk item list */
+}
+
+/* --- Layout (Grid) --- */
+.layout-grid {
+    display: grid; /* Komentar: Menggunakan CSS Grid untuk layout 2 kolom */
+    grid-template-columns: 3fr 1fr; /* Kolom utama 3x lebih besar dari sidebar */
+    gap: 20px;
+    padding: 20px;
+}
+
+/* --- Iklan (Flexbox di dalam Grid) --- */
+.iklan-flex {
+    display: flex; /* Komentar: Menggunakan Flexbox untuk menata iklan dan info */
+    border: 1px solid #ccc;
+    margin-top: 15px;
+    padding: 10px;
+    background-color: #ecf0f1;
+}
+.iklan-item {
+    flex: 2;
+    background-color: #bdc3c7;
+    padding: 10px;
+}
+.iklan-info {
+    flex: 1;
+    padding: 10px;
+    margin-left: 10px;
+}

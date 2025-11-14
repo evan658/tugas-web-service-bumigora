@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tugas Pemrograman Web - Dasar</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1>Bagian 1: Tag HTML Sederhana</h1>
+    <p>Nama Mahasiswa: <strong>Stevano Marawo</strong></p>
+    <p>NIM Mahasiswa: <span>2301010045</span></p>
+
+    <hr>
+
+    <h1>Bagian 2: Tabel Informasi</h1>
+    <table border="1">
+        <thead>
+            <tr>
+                <th>Keterangan</th>
+                <th>Detail</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Nama</td>
+                <td>Stevano Marawo</td>
+            </tr>
+            <tr>
+                <td>NIM</td>
+                <td>2301010045</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <hr>
+
+    <h1>Bagian 3: Forms</h1>
+    <form action="handle_form.php" method="POST">
+        <label for="nama">Nama Lengkap:</label><br>
+        <input type="text" id="nama" name="nama" value="Stevano Marawo" required><br><br>
+
+        <label for="nim">NIM:</label><br>
+        <input type="text" id="nim" name="nim" value="2301010045" required><br><br>
+        
+        <label>Gender:</label><br>
+        <input type="radio" id="pria" name="gender" value="Pria" required>
+        <label for="pria">Pria</label><br>
+        <input type="radio" id="wanita" name="gender" value="Wanita">
+        <label for="wanita">Wanita</label><br><br>
+        
+        <input type="submit" value="Submit Data">
+    </form>
+
+    <hr>
+
+    <h1>Bagian 4: Layout (Grid & Flexbox) & Navbar</h1>
+    <nav class="main-nav">
+        <div class="brand-name">TUGAS WEBSERVICE | Stevano Marawo (2301010045)</div>
+        <ul>
+            <li><a href="#">Home Umum</a></li>
+            <li><a href="#">About Umum</a></li>
+            <li><a href="#">Contact Umum</a></li>
+        </ul>
+    </nav>
+
+    <div class="layout-grid">
+        <div class="main-content">
+            <h3>Konten Utama (Layout Grid)</h3>
+            <p>Ini adalah area konten utama. Implementasi Grid/Flexbox.</p>
+            <div class="iklan-flex">
+                <div class="iklan-item"></div>
+                <div class="iklan-info">
+                    <p>Iklan: Peluang Karir!</p>
+                    <p>Dibuat oleh: Stevano Marawo</p>
+                    <p>ID: 2301010045</p>
+                </div>
+            </div>
+        </div>
+        <div class="sidebar-content">
+            <h3>Sidebar</h3>
+            <p>Navigasi Tambahan</p>
+        </div>
+    </div>
+
+</body>
+</html>
